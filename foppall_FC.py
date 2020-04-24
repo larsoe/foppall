@@ -8,6 +8,7 @@ class FC:
 		self.name = name
 		self.points = 0
 		self.league = 0
+		self.players = []
 	def printout(self):
 		print(self.name, ' ', self.points)
 
@@ -69,12 +70,7 @@ FC_ending = [
 
 
 def new_club():
-	print('HEI')
 	club_name = cities[random.randrange(len(cities))] + ' ' + FC_ending[random.randrange(0,len(FC_ending))]
 	all_clubs.append(FC(club_name))
 	return(club_name)
-
-# for x in range(20):
-# 	newclub()
-
 
